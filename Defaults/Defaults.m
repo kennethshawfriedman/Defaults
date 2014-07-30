@@ -51,7 +51,6 @@
 		NSMutableDictionary *tempA = [arrayOfProperties objectAtIndex:i];
 		
 		if ([[tempA objectForKey:@"LSHandlerURLScheme"] isEqualToString:@"mailto"]) {
-			//NSLog(@"%@", [tempA objectForKey:@"LSHandlerRoleAll"]);
 			[tempA setObject:address forKey:@"LSHandlerRoleAll"];
 		}
 	}
