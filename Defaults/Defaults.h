@@ -18,9 +18,11 @@
 @property (strong) IBOutlet NSPopUpButton *popUpMail;
 @property (strong) IBOutlet NSPopUpButton *popUpBrowser;
 @property (strong) IBOutlet NSTextField *tempLabelForTesting;
+@property (strong) IBOutlet NSPopUpButton *popUpMusic;
 
 - (IBAction)changeMail:(NSPopUpButton *)sender;
 - (IBAction)changeBrowser:(NSPopUpButton *)sender;
+- (IBAction)changeMusic:(NSPopUpButton *)sender;
 
 
 @end

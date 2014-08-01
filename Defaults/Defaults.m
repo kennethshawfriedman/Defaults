@@ -13,6 +13,7 @@
 - (void)mainViewDidLoad {
 	[self setUpMail];
 	[self setUpBrowser];
+	[self setUpMusic];
 }
 
 - (void) setUpMail {
@@ -127,7 +128,25 @@
 	}
 }
 
+- (IBAction)changeMusic:(NSPopUpButton *)sender {
+	
+}
 
+- (void) setUpMusic {
+	[_popUpMusic removeAllItems];
+	[_popUpMusic addItemsWithTitles:@[@"iTunes", @"Quicktime"]];
+	
+	if ([[self getCurrentMusicDefault] isEqualToString:@"com.apple.iTunes"]) {
+		[_popUpMail selectItemAtIndex:0];
+	} else {
+		[_popUpMail selectItemAtIndex:1];
+	}
+	
+}
+
+- (NSString *) getCurrentMusicDefault {
+	return nil;
+}
 
 
 @end
